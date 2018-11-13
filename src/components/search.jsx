@@ -6,12 +6,17 @@ class Search extends Component {
     results: []
   }
 
+  componentDidMount() {
+
+  }
+
   getAlbums = () => {
     fetch(`https://itunes.apple.com/search?term=${this.state.query}`)
-    .then(({data }) => {
+    .then(({ data }) => {
       this.setState({
         results: data.data
       })
+
     })
   }
 
