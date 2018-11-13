@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Search               from '../components/search.jsx';
-import Albums               from '../components/albums.jsx';
+import Search               from './components/search.jsx';
+// import Albums               from '../components/albums.jsx';
 
 class App extends Component {
   render() {
